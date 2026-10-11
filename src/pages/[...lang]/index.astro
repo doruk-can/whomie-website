@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import Logo from '../../components/Logo.astro';
+import StoreButtons from '../../components/StoreButtons.astro';
+import { copy, localePaths, type Locale } from '../../lib/copy';
+import { SITE, PATHS } from '../../lib/site.mjs';
+
+export const getStaticPaths = localePaths;
+const { lang } = Astro.props as { lang: Locale };
+const t = copy[lang];
+
+/* one small line icon per feature, in the same order as t.home.features */
+const icons = [
+  '<path d="M12 21s-7-6.1-7-11.4a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.6" r="2.6"/>',
+  '<path d="M4 7h9M18 7h2M4 17h3M12 17h8"/><circle cx="15.5" cy="7" r="2.5"/><circle cx="9.5" cy="17" r="2.5"/>',
+  '<path d="M4.5 5.5h15v10.5H10l-5.5 4.5z"/><path d="M8.5 10.75h7"/>',
+];
+---
+<Base lang={lang} path={PATHS.home} title={t.meta.home.title} description={t.meta.home.description} hero>
+  <section class="hero">
+    <div class="wrap">
+      <Logo class="hero-logo" />
+      <div class="hero-body">
+        <h1>{t.home.headline}</h1>
+        <StoreButtons lang={lang} />
+      </div>
+    </div>
+  </section>
+  <section class="intro">
+    <div class="wrap">
+      <ul class="features">
+        {t.home.features.map((line, i) => (
+          <li>
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" set:html={icons[i]} />
+            <span>{line}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="contact">{t.home.contact} <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+    </div>
+  </section>
+</Base>
