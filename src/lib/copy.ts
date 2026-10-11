@@ -44,11 +44,6 @@ const en = {
       description:
         'The rules for using Whomie: who can use it, your content, acceptable use, meeting people safely, reporting and blocking.',
     },
-    deleteAccount: {
-      title: 'Delete your account — Whomie',
-      description:
-        'How to delete your Whomie account in the app or by email, what is deleted at once, and what is kept for a limited time.',
-    },
     support: {
       title: 'Support — Whomie',
       description:
@@ -64,7 +59,6 @@ const en = {
     home: 'Home',
     privacy: 'Privacy',
     terms: 'Terms',
-    deleteAccount: 'Delete account',
     support: 'Support',
   },
 
@@ -119,8 +113,12 @@ const en = {
         'Tap Delete Account.',
         'Confirm.',
       ],
-      after: 'Deleting your account cannot be undone. If you cannot use the app, you can also ask by email.',
-      more: 'What is deleted, what is kept, and how to ask by email',
+      after: 'Deleting your account cannot be undone.',
+      byEmail: {
+        before: 'If you cannot use the app, email',
+        after: 'from your account’s email address with the subject “Delete my account”.',
+      },
+      more: 'What happens to your data',
     },
   },
 
@@ -156,11 +154,6 @@ const tr: typeof en = {
       description:
         'Whomie’yi kullanma kuralları: kimler kullanabilir, içerikleriniz, kabul edilebilir kullanım, güvenli buluşma, şikâyet ve engelleme.',
     },
-    deleteAccount: {
-      title: 'Hesabınızı silin — Whomie',
-      description:
-        'Whomie hesabınızı uygulamadan ya da e-postayla nasıl silersiniz, neler hemen silinir, neler sınırlı bir süre saklanır.',
-    },
     support: {
       title: 'Destek — Whomie',
       description:
@@ -176,7 +169,6 @@ const tr: typeof en = {
     home: 'Ana sayfa',
     privacy: 'Gizlilik',
     terms: 'Koşullar',
-    deleteAccount: 'Hesabı sil',
     support: 'Destek',
   },
 
@@ -231,8 +223,12 @@ const tr: typeof en = {
         'Hesabı Sil’e dokunun.',
         'Onaylayın.',
       ],
-      after: 'Hesap silme işlemi geri alınamaz. Uygulamayı kullanamıyorsanız e-postayla da isteyebilirsiniz.',
-      more: 'Neler silinir, neler saklanır, e-postayla nasıl istenir',
+      after: 'Hesap silme işlemi geri alınamaz.',
+      byEmail: {
+        before: 'Uygulamayı kullanamıyorsanız, hesabınızın e-posta adresinden',
+        after: 'adresine konu satırı “Delete my account” olan bir e-posta gönderin.',
+      },
+      more: 'Verilerinize ne olur',
     },
   },
 

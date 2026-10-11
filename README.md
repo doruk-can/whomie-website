@@ -1,7 +1,7 @@
 # Whomie — website
 
-www.whomie.com: a one-screen landing page, Support, and the Privacy Policy,
-Terms and Conditions and account-deletion texts. English at the root, Turkish
+www.whomie.com: a one-screen landing page, Support, the Privacy Policy and
+the Terms and Conditions. English at the root, Turkish
 under `/tr/`, plus a bilingual 404. Astro 5 static output, plain CSS, no
 client-side JavaScript.
 
@@ -26,14 +26,17 @@ npm run preview    # serves dist/
 
 ## The legal texts
 
-Edit them in the app repo, then copy them over unchanged:
+Edit them in the app repo, then copy them over unchanged. The site has no
+account-deletion page, so `delete-account*.md` is not copied:
 
 ```sh
-cp ../../mobile/whomie-expo-app/docs/legal/*.md src/legal/
+cp ../../mobile/whomie-expo-app/docs/legal/{privacy-policy,terms-conditions}{,.tr}.md src/legal/
 ```
 
 They link to each other as `https://www.whomie.com/...`. The build turns those
-links into root-relative ones (`localLinks` in `astro.config.mjs`) and wraps
+links into root-relative ones (`localLinks` in `astro.config.mjs`), sends links
+to removed pages where `MOVED` in `site.mjs` says (the old `/delete-account/`
+goes to the deletion steps on Support), and wraps
 every table in its own scroll box (`wrapTables`). The `<a id="...">` anchors
 must stay: the contents lists and the other texts link to them, and `verify`
 fails on a link to a missing anchor.

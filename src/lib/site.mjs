@@ -29,7 +29,6 @@ export const PATHS = {
   home: '/',
   privacy: '/privacy-policy/',
   terms: '/terms-conditions/',
-  deleteAccount: '/delete-account/',
   support: '/support/',
 };
 
@@ -38,6 +37,13 @@ export const PATHS = {
  * directly, exactly as written. verify.mjs fails if either goes missing.
  */
 export const FIXED_PATHS = [PATHS.privacy, PATHS.terms];
+
+/**
+ * Pages that were removed, and where links to them go instead. Privacy §7 and
+ * Terms §9 still link to the old account-deletion page; until those sentences
+ * are edited, the build points them at the deletion steps on Support.
+ */
+export const MOVED = { '/delete-account/': PATHS.support + '#delete-account' };
 
 export const LOCALES = ['en', 'tr'];
 

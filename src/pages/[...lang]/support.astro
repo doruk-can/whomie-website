@@ -32,5 +32,6 @@ const mail = `mailto:${SITE.email}`;
   <h2 id="delete-account">{s.delete.heading}</h2>
   <ol>{s.delete.steps.map((step) => <li>{step}</li>)}</ol>
   <p>{s.delete.after}</p>
-  <p><a href={localePath(lang, PATHS.deleteAccount)}>{s.delete.more}</a></p>
+  <p>{s.delete.byEmail.before} <a href={`${mail}?subject=Delete%20my%20account`}>{SITE.email}</a> {s.delete.byEmail.after}</p>
+  <p><a href={localePath(lang, PATHS.privacy) + '#retention'}>{s.delete.more}</a></p>
 </Legal>

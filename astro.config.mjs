@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { SITE } from './src/lib/site.mjs';
+import { SITE, MOVED } from './src/lib/site.mjs';
 
 /**
  * Wrap every table in the legal texts in its own scroll container, so a wide
@@ -34,11 +34,17 @@ function wrapTables() {
  */
 function localLinks() {
   const origin = SITE.url + '/';
+  /* '/tr/delete-account/' → '/tr/support/#delete-account', per MOVED in site.mjs */
+  const moved = (path) => {
+    const tr = path.startsWith('/tr/');
+    const to = MOVED[tr ? path.slice(3) : path];
+    return to ? (tr ? '/tr' : '') + to : path;
+  };
   return (tree) => {
     const walk = (node) => {
       if (node.type === 'element' && node.tagName === 'a') {
         const href = node.properties?.href;
-        if (typeof href === 'string' && href.startsWith(origin)) node.properties.href = href.slice(SITE.url.length);
+        if (typeof href === 'string' && href.startsWith(origin)) node.properties.href = moved(href.slice(SITE.url.length));
       }
       node.children?.forEach(walk);
     };
