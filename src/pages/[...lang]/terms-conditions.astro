@@ -1,0 +1,15 @@
+---
+import Legal from '../../layouts/Legal.astro';
+import { Content as En } from '../../legal/terms-conditions.md';
+import { Content as Tr } from '../../legal/terms-conditions.tr.md';
+import { copy, localePaths, type Locale } from '../../lib/copy';
+import { PATHS } from '../../lib/site.mjs';
+
+export const getStaticPaths = localePaths;
+const { lang } = Astro.props as { lang: Locale };
+const t = copy[lang].meta.terms;
+const Doc = lang === 'tr' ? Tr : En;
+---
+<Legal lang={lang} path={PATHS.terms} title={t.title} description={t.description}>
+  <Doc />
+</Legal>

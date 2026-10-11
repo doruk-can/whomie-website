@@ -1,0 +1,13 @@
+---
+/* A long-form page: the legal texts (rendered from src/legal/*.md) and Support. */
+import Base from './Base.astro';
+import type { Locale } from '../lib/copy';
+
+interface Props { lang: Locale; path: string; title: string; description: string }
+const { lang, path, title, description } = Astro.props;
+---
+<Base lang={lang} path={path} title={title} description={description}>
+  <article class="doc">
+    <slot />
+  </article>
+</Base>
