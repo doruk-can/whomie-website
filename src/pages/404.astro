@@ -1,0 +1,27 @@
+---
+/* A mistyped URL has no language, so the 404 says it in both. */
+import Base from '../layouts/Base.astro';
+import { PATHS, localePath } from '../lib/site.mjs';
+import { copy } from '../lib/copy';
+
+const { en, tr } = copy;
+---
+<Base lang="en" title={en.meta.notFound.title} description={en.meta.notFound.description}>
+  <section class="notfound">
+    <div class="wrap">
+      <p class="nf-code" aria-hidden="true">404</p>
+      <div class="nf-pair">
+        <div>
+          <h1>{en.notFound.heading}</h1>
+          <p>{en.notFound.body}</p>
+          <p><a href={localePath('en', PATHS.home)}>{en.notFound.back}</a></p>
+        </div>
+        <div lang="tr">
+          <h2>{tr.notFound.heading}</h2>
+          <p>{tr.notFound.body}</p>
+          <p><a href={localePath('tr', PATHS.home)} hreflang="tr">{tr.notFound.back}</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
