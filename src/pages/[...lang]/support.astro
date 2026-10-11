@@ -1,0 +1,36 @@
+---
+/* The App Store Connect support URL. Every step here matches the app's own
+   labels, and the reporting and blocking sentences come from the Terms. */
+import Legal from '../../layouts/Legal.astro';
+import { copy, localePaths, type Locale } from '../../lib/copy';
+import { SITE, PATHS, localePath } from '../../lib/site.mjs';
+
+export const getStaticPaths = localePaths;
+const { lang } = Astro.props as { lang: Locale };
+const t = copy[lang];
+const s = t.support;
+const mail = `mailto:${SITE.email}`;
+---
+<Legal lang={lang} path={PATHS.support} title={t.meta.support.title} description={t.meta.support.description}>
+  <h1>{s.heading}</h1>
+  <p class="lede">{s.lede}</p>
+
+  <h2 id="contact">{s.contact.heading}</h2>
+  <p>{s.contact.before} <a href={mail}><strong>{SITE.email}</strong></a></p>
+  <p>{s.contact.after}</p>
+
+  <h2 id="report">{s.report.heading}</h2>
+  <ul>{s.report.steps.map((step) => <li>{step}</li>)}</ul>
+  <p>{s.report.after}</p>
+  <p><strong>{s.report.danger}</strong></p>
+
+  <h2 id="block">{s.block.heading}</h2>
+  <ol>{s.block.steps.map((step) => <li>{step}</li>)}</ol>
+  <p>{s.block.after}</p>
+  <p><a href={localePath(lang, PATHS.terms) + '#reporting-and-blocking'}>{s.block.more}</a></p>
+
+  <h2 id="delete-account">{s.delete.heading}</h2>
+  <ol>{s.delete.steps.map((step) => <li>{step}</li>)}</ol>
+  <p>{s.delete.after}</p>
+  <p><a href={localePath(lang, PATHS.deleteAccount)}>{s.delete.more}</a></p>
+</Legal>
