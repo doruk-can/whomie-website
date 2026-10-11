@@ -1,0 +1,27 @@
+---
+import { PATHS, localePath } from '../lib/site.mjs';
+import { copy, other, type Locale } from '../lib/copy';
+
+/* `path` is the page without its language prefix. The 404 has none, so its
+   language switch goes to the other language's home page. */
+interface Props { lang: Locale; path?: string }
+const { lang, path = PATHS.home } = Astro.props;
+const t = copy[lang];
+const to = other(lang);
+---
+<footer class="foot">
+  <nav class="wrap foot-in" aria-label={t.a11y.footer}>
+    <ul class="foot-links">
+      <li><a href={localePath(lang, PATHS.privacy)}>{t.nav.privacy}</a></li>
+      <li><a href={localePath(lang, PATHS.terms)}>{t.nav.terms}</a></li>
+      <li><a href={localePath(lang, PATHS.deleteAccount)}>{t.nav.deleteAccount}</a></li>
+      <li><a href={localePath(lang, PATHS.support)}>{t.nav.support}</a></li>
+    </ul>
+    <a class="lang-switch" href={localePath(to, path)} lang={to} hreflang={to}>
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false">
+        <circle cx="10" cy="10" r="7.5" /><path d="M2.5 10h15M10 2.5c2.2 2.1 3.2 4.6 3.2 7.5s-1 5.4-3.2 7.5c-2.2-2.1-3.2-4.6-3.2-7.5s1-5.4 3.2-7.5z" />
+      </svg>
+      {copy[to].name}
+    </a>
+  </nav>
+</footer>

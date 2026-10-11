@@ -1,0 +1,8 @@
+---
+/* The only place that draws the logo. The file and its size live in site.mjs. */
+import { SITE } from '../lib/site.mjs';
+
+interface Props { class?: string; alt?: string }
+const { class: cls, alt = SITE.name } = Astro.props;
+---
+<img class={cls} src={SITE.logo.src} width={SITE.logo.width} height={SITE.logo.height} alt={alt} />

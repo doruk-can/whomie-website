@@ -1,0 +1,59 @@
+---
+import '@fontsource-variable/nunito-sans/wght.css';
+import '../styles/global.css';
+import Logo from '../components/Logo.astro';
+import Footer from '../components/Footer.astro';
+import { SITE, PATHS, LOCALES, absolute, localePath } from '../lib/site.mjs';
+import { copy, type Locale } from '../lib/copy';
+
+/* `path` is the page without its language prefix ('/privacy-policy/'). The 404
+   leaves it out: it is served at any URL, so it has no canonical or hreflang.
+   `hero` pages draw their own header. */
+interface Props { lang: Locale; title: string; description: string; path?: string; hero?: boolean }
+const { lang, title, description, path, hero = false } = Astro.props;
+const t = copy[lang];
+const canonical = path && absolute(lang, path);
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {canonical ? (
+    <>
+      <link rel="canonical" href={canonical} />
+      {LOCALES.map((l: Locale) => <link rel="alternate" hreflang={l} href={absolute(l, path)} />)}
+      <link rel="alternate" hreflang="x-default" href={absolute('en', path)} />
+    </>
+  ) : (
+    <meta name="robots" content="noindex" />
+  )}
+  <meta name="theme-color" content="#F47646" />
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="sitemap" href="/sitemap.xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:locale" content={lang === 'tr' ? 'tr_TR' : 'en_US'} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  {canonical && <meta property="og:url" content={canonical} />}
+  <meta property="og:image" content={SITE.url + '/icon-512.png'} />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body>
+  <a class="skip" href="#main">{t.a11y.skip}</a>
+  {!hero && (
+    <header class="bar">
+      <div class="wrap">
+        <a class="bar-home" href={localePath(lang, PATHS.home)}><Logo class="bar-logo" alt={t.a11y.home} /></a>
+      </div>
+    </header>
+  )}
+  <main id="main" tabindex="-1"><slot /></main>
+  <Footer lang={lang} path={path} />
+</body>
+</html>

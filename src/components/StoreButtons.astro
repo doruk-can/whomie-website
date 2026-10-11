@@ -1,0 +1,20 @@
+---
+/* Official badge artwork, unmodified. A store whose URL is empty in site.mjs is not shown. */
+import { SITE } from '../lib/site.mjs';
+import { copy, type Locale } from '../lib/copy';
+
+interface Props { lang: Locale }
+const t = copy[Astro.props.lang].stores;
+---
+<div class="stores">
+  {SITE.appStore && (
+    <a class="badge" href={SITE.appStore}>
+      <img src="/badges/app-store.svg" alt={t.appStore} width="120" height="40" />
+    </a>
+  )}
+  {SITE.playStore && (
+    <a class="badge badge--play" href={SITE.playStore}>
+      <img src="/badges/google-play.png" alt={t.playStore} width="155" height="60" />
+    </a>
+  )}
+</div>
