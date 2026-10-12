@@ -37,7 +37,7 @@
 
 Whomie, oda veya ev arkadaşı arayanlar için bir mobil uygulamadır. Profil oluşturabilir, bir konumun yakınındaki kişilere ve oda ilanlarına bakabilir, onları filtreleyebilir ve sohbet edebilirsiniz.
 
-Whomie'yi, Whomie uygulamasını yayınlayan bireysel geliştirici Doruk Can sunar. Bu koşullarda "Whomie", "biz" ve "bizim" yayıncıyı, "siz" ise uygulamayı kullanan kişiyi ifade eder.
+Whomie'yi, Whomie uygulamasını yayınlayan bireysel geliştirici (uygulamanın App Store sayfasında satıcı olarak görünür) sunar. Bu koşullarda "Whomie", "biz" ve "bizim" yayıncıyı, "siz" ise uygulamayı kullanan kişiyi ifade eder.
 
 Bu koşullar sizinle aramızda bir sözleşmedir. Hesap oluşturarak veya Whomie'yi kullanarak bu koşulları kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Whomie'yi kullanmayın.
 

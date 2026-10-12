@@ -38,7 +38,7 @@
 
 Whomie, oda veya ev arkadaşı arayanlar için bir mobil uygulamadır. Profil oluşturur, bir konumun yakınındaki kişilere ve oda ilanlarına bakar, onları filtreler ve sohbet edersiniz.
 
-Veri sorumlusu, Whomie uygulamasını yayınlayan bireysel geliştirici Doruk Can'dır. Bu metinde "Whomie", "biz" ve "bizim" yayıncıyı ifade eder.
+Veri sorumlusu, Whomie uygulamasını yayınlayan bireysel geliştiricidir (uygulamanın App Store sayfasında satıcı olarak görünür). Bu metinde "Whomie", "biz" ve "bizim" yayıncıyı ifade eder.
 
 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, bu metinde anlatılan kişisel verilerin **veri sorumlusu** biziz. Yani verilerin neden ve nasıl işleneceğine biz karar veririz. AB Genel Veri Koruma Tüzüğü ("GDPR") sizin için geçerliyse, GDPR'a göre de veri sorumlusu ("controller") biziz.
 

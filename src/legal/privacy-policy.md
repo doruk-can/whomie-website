@@ -38,7 +38,7 @@
 
 Whomie is a mobile app for people who are looking for a room or a flatmate. You create a profile, browse people and room listings near a location, filter them, and chat.
 
-The controller is Doruk Can, the individual developer who publishes the Whomie app. In this policy, "Whomie", "we", "us" and "our" mean the publisher.
+The controller is the individual developer who publishes the Whomie app (shown as the seller on the app's App Store page). In this policy, "Whomie", "we", "us" and "our" mean the publisher.
 
 We are the data controller ("veri sorumlusu" under the Turkish Personal Data Protection Law No. 6698, "KVKK") for the personal data described here. That means we decide why and how it is used. If the EU General Data Protection Regulation ("GDPR") applies to you, we are the controller under the GDPR too.
 

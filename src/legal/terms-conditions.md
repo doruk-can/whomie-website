@@ -37,7 +37,7 @@
 
 Whomie is a mobile app for people who are looking for a room or a flatmate. You can create a profile, browse people and room listings near a location, filter them, and chat.
 
-Whomie is provided by Doruk Can, the individual developer who publishes the Whomie app. In these terms, "Whomie", "we", "us" and "our" mean the publisher, and "you" means the person using the app.
+Whomie is provided by the individual developer who publishes the Whomie app (shown as the seller on the app's App Store page). In these terms, "Whomie", "we", "us" and "our" mean the publisher, and "you" means the person using the app.
 
 These terms are an agreement between you and us. By creating an account or using Whomie, you accept them. If you do not accept them, please do not use Whomie.
 
