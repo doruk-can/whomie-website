@@ -64,11 +64,6 @@ const en = {
 
   home: {
     headline: 'Find a room or a flatmate near you.',
-    features: [
-      'See people and rooms near you.',
-      'Filter by budget, distance and age.',
-      'Chat in the app before you meet.',
-    ],
     contact: 'Questions? Write to',
   },
 
@@ -174,11 +169,6 @@ const tr: typeof en = {
 
   home: {
     headline: 'Yakınında oda ya da ev arkadaşı bul.',
-    features: [
-      'Yakınındaki kişileri ve odaları gör.',
-      'Bütçeye, mesafeye ve yaşa göre filtrele.',
-      'Tanışmadan önce uygulamada sohbet et.',
-    ],
     contact: 'Soruların mı var? Yaz:',
   },
 
