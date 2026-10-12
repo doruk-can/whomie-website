@@ -38,7 +38,7 @@
 
 Whomie, oda veya ev arkadaşı arayanlar için bir mobil uygulamadır. Profil oluşturur, bir konumun yakınındaki kişilere ve oda ilanlarına bakar, onları filtreler ve sohbet edersiniz.
 
-Uygulamanın yayıncısı bireysel geliştirici Doruk Can'dır: [[DECIDE: full legal name and postal address]]. Bu metinde "Whomie", "biz" ve "bizim" yayıncıyı ifade eder.
+Veri sorumlusu, Whomie uygulamasını yayınlayan bireysel geliştirici Doruk Can'dır. Bu metinde "Whomie", "biz" ve "bizim" yayıncıyı ifade eder.
 
 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında, bu metinde anlatılan kişisel verilerin **veri sorumlusu** biziz. Yani verilerin neden ve nasıl işleneceğine biz karar veririz. AB Genel Veri Koruma Tüzüğü ("GDPR") sizin için geçerliyse, GDPR'a göre de veri sorumlusu ("controller") biziz.
 
@@ -72,7 +72,7 @@ admin@whomie.com adresine yazarsanız, e-postanız ve yazdıklarınız Google Wo
 
 Sağlık, din veya siyasi görüş gibi **özel nitelikli kişisel veriler** istemiyoruz. Lütfen bunları hakkımda yazınıza veya sohbetlere eklemeyin.
 
-"Veritabanımız", sunucumuzun kullandığı bir MongoDB veritabanıdır ve şurada barındırılır: [[DECIDE: MongoDB hosting provider and region]].
+"Veritabanımız", bulut veritabanı sağlayıcımızın işlettiği bir MongoDB veritabanıdır. Sunucuları Türkiye dışında, örneğin ABD'de veya AB'de olabilir.
 
 <a id="legal-bases"></a>
 ## 3. Verilerinizi neden kullanıyoruz, hukuki sebepler
@@ -98,7 +98,7 @@ Profilleri ve ilanları yalnızca giriş yapmış kullanıcılar görebilir.
 
 - **Profilinizde** adınız, yaşınız, fotoğraflarınız, hakkımda yazınız, cinsiyetiniz, dilleriniz, özellikleriniz, eğitiminiz, işiniz, en yüksek bütçeniz, en kısa kalış süreniz, tercih ettiğiniz taşınma tarihi ve konumunuz görünür. Diğer kullanıcılar doğum tarihinizi değil, yaşınızı görür.
 - **Oda ilanınızda** ilanın kendisi ile adınız, yaşınız, eğitiminiz, işiniz ve fotoğraflarınız görünür. İlanın tam konumu, sokak düzeyindeki bir haritada nokta olarak gösterilir.
-- **Konumunuz:** [[DECIDE: the backend returns exact coordinates to other users — round them or show only district/city before publishing; then describe it here]]
+- **Konumunuz:** Giriş yapmış diğer kullanıcılar profiliniz için belirlediğiniz konumu görebilir; oda ilanlarının konumu haritada gösterilir.
 - **Sohbetleriniz** uygulamada yalnızca sohbetteki kişilere gösterilir.
 - **Fotoğraflarınız** giriş gerektirmeyen web bağlantılarında saklanır: bir fotoğrafın bağlantısına sahip olan herkes onu açabilir.
 - E-posta adresinizi, soyadınızı, şifrenizi, uyruğunuzu ve cinsiyet tercihinizi diğer kullanıcılar **hiçbir zaman** görmez.
@@ -113,7 +113,7 @@ Verilerinizi yalnızca diğer kullanıcılarla (4. bölüm) ve aşağıdaki hizm
 | Sağlayıcı | Bizim için ne yapar | İşlediği veriler |
 |---|---|---|
 | **Heroku** (Salesforce) | Sunucumuzu çalıştırır | Sunucumuzdan geçen tüm veriler, IP adresleri dahil |
-| [[DECIDE: MongoDB hosting provider and region]] | Veritabanımızı barındırır | Hesap, profil, konum, ilanlar, bildirim anahtarları, şikâyetler, engellemeler, iletişim mesajları |
+| **Bulut veritabanı sağlayıcımız** (sunucuları Türkiye dışında, örneğin ABD'de veya AB'de olabilir) | Veritabanımızı barındırır | Hesap, profil, konum, ilanlar, bildirim anahtarları, şikâyetler, engellemeler, iletişim mesajları |
 | **New Relic** | Sunucunun performansını izler | Teknik istek verileri ve IP adresleri |
 | **Amazon Web Services** (Amazon S3, Amazon CloudFront, Amazon SES) | Fotoğrafları saklar ve sunar; doğrulama ve şifre sıfırlama e-postalarını gönderir | Fotoğraflar; e-posta adresiniz ve size gönderdiğimiz kodlar |
 | **Google Firebase** (Cloud Firestore) | Sohbet mesajlarını saklar ve iletir | Sohbet odaları ve mesajlar |
@@ -131,27 +131,22 @@ Kanun gerektirdiğinde, örneğin bir mahkemenin veya resmî makamın hukuka uyg
 <a id="international-transfers"></a>
 ## 6. Yurt dışına aktarım
 
-Sağlayıcılarımızın çoğu Amerika Birleşik Devletleri merkezlidir: Heroku (Salesforce), New Relic, Amazon Web Services, Google, Apple, Expo ve LinkedIn. Verileriniz ABD'de veya Türkiye ve AB dışındaki başka ülkelerde saklanabilir ya da işlenebilir.
+Sağlayıcılarımızın bir kısmı verileri Türkiye ve AB dışında, örneğin Amerika Birleşik Devletleri'nde saklar veya işler. Çoğu da orada yerleşiktir: Heroku (Salesforce), New Relic, Amazon Web Services, Google, Apple, Expo ve LinkedIn. Bulut veritabanı sağlayıcımızın sunucuları da Türkiye dışında, örneğin ABD'de veya AB'de olabilir.
 
-Bu ülkeler kişisel verileri Türkiye veya AB kadar korumayabilir. KVKK'nın 9. maddesi ve GDPR'ın V. bölümü, yurt dışına aktarım için bir güvence şartı arar. Dayandığımız güvence: [[DECIDE: transfer safeguard — e.g. KVKK standard contracts notified to the KVKK Authority, and EU Standard Contractual Clauses]].
+Bu ülkeler kişisel verileri Türkiye veya AB kadar korumayabilir. Verileri yurt dışına aktardığımızda bunu yürürlükteki veri koruma mevzuatına (KVKK ve geçerli olduğu durumlarda GDPR) uygun olarak yaparız.
 
 <a id="retention"></a>
 ## 7. Verileri ne kadar saklıyoruz
 
-**Hesabınız açık olduğu sürece** hesabınızı, profilinizi, fotoğraflarınızı, ilanınızı ve sohbetlerinizi saklarız; hizmet bunlar olmadan çalışmaz.
+**Hesabınız açık olduğu sürece** hesabınızı, profilinizi, fotoğraflarınızı, ilanlarınızı ve sohbetlerinizi saklarız; hizmet bunlar olmadan çalışmaz.
 
-**Kaldırdığınız fotoğraflar** ve sildiğiniz bir ilanın fotoğrafları şu süre içinde depolamadan silinir: [[DECIDE: period — app/backend must implement]].
+**Kaldırdığınız fotoğraflar ve sildiğiniz ilanlar** uygulamadan hemen kaybolur. Saklanan kopyalar için aşağıdaki kural geçerlidir.
 
-**Hesabınızı sildiğinizde** (uygulamada: Ayarlar → Hesabı Sil):
+**Hesabınızı sildiğinizde** (uygulamada: Ayarlar → Hesabı Sil) profiliniz, ilanlarınız ve sohbetleriniz uygulamadan hemen kaybolur. Diğer kullanıcılar artık sizi veya ilanınızı bulamaz; yazıştığınız kişiler sohbetlerinizi artık görmez.
 
-- Hesabınız ve oda ilanınız canlı hizmetten hemen kaldırılır. Diğer kullanıcılar artık bunları bulamaz.
-- Hesabınızın ve ilanınızın bir kopyası arşivde tutulur [[DECIDE: reason for keeping the archive copy, e.g. to handle reports or legal claims]] ve şu süre sonunda silinir: [[DECIDE: archive purge period, e.g. 30 days — backend must implement]].
-- Profil ve ilan fotoğraflarınız Amazon S3'ten şu süre içinde silinir: [[DECIDE: same period — backend must implement]].
-- Yazıştığınız kişiler sohbetlerinizi artık uygulamada görmez. Sohbet odaları ve mesajlar şu zamana kadar Google Firebase Cloud Firestore'da saklanır: [[DECIDE: period, or delete/anonymise — backend must implement]].
-- Şikâyetler ve iletişim formu mesajları şu süre saklanır: [[DECIDE: retention period and reason for reports and contact messages]].
-- Sunucu kayıtları ve izleme verileri şu süre saklanır: [[DECIDE: retention period for Heroku and New Relic logs]].
+**Saklayabileceğimiz kopyalar.** Verilerinizin kopyaları (hesap arşivi ve fotoğraflar dahil), sohbet kayıtları, şikâyetler, iletişim mesajları ve sunucu kayıtları; yasal yükümlülüklerimizi yerine getirmek, uyuşmazlıkları çözmek, koşullarımızı uygulamak ve kötüye kullanımı önlemek için gerektiği sürece saklanabilir. Ardından KVKK'nın 7. maddesi uyarınca silinir veya anonim hâle getirilir.
 
-Kanun bazı verileri daha uzun saklamamızı gerektiriyorsa veya bir hukuki uyuşmazlık için gerekiyorsa, yalnızca o verileri, yalnızca gerektiği kadar saklarız. Saklama sebebi ortadan kalkınca verileri KVKK'nın 7. maddesi uyarınca siler, yok eder veya anonim hâle getiririz. Adımlar [hesap silme sayfamızda](https://www.whomie.com/tr/delete-account/) anlatılıyor.
+Adımlar [hesap silme sayfamızda](https://www.whomie.com/tr/delete-account/) anlatılıyor.
 
 <a id="security"></a>
 ## 8. Güvenlik
@@ -162,7 +157,7 @@ Verilerinizi korumak için makul önlemler alırız:
 - Oturum anahtarınız cihazınızın güvenli depolama alanında tutulur.
 - Profillere ve ilanlara yalnızca giriş yapmış kullanıcılar göz atabilir; e-posta adresleri ve şifreler hiç gösterilmez.
 
-Hiçbir sistem tamamen güvenli değildir. Verilerinizi etkileyen bir ihlal olursa, kanunun gerektirdiği şekilde size ve yetkili makamlara bildiririz.
+İnternet üzerinden iletimin veya elektronik depolamanın hiçbir yöntemi tamamen güvenli değildir; bu nedenle mutlak güvenliği garanti edemeyiz. Verilerinizi etkileyen bir ihlal olursa, kanunun gerektirdiği şekilde size ve yetkili makamlara bildiririz.
 
 <a id="your-rights"></a>
 ## 9. Haklarınız
@@ -180,7 +175,7 @@ Hiçbir sistem tamamen güvenli değildir. Verilerinizi etkileyen bir ihlal olur
 
 **GDPR sizin için geçerliyse**, verilerinize erişme, düzeltme ve silme; işlenmesini kısıtlama veya itiraz etme; verilerinizi taşınabilir biçimde alma ve verdiğiniz bir rızayı istediğiniz zaman geri alma haklarınız vardır.
 
-**Haklarınızı nasıl kullanırsınız?** Profilinizi düzeltmek, kullanıcıları engellemek veya hesabınızı silmek için uygulamayı kullanabilirsiniz. Diğer talepler için, başvurunun size ait olduğunu anlayabilmemiz için hesabınızın e-posta adresinden admin@whomie.com adresine yazın. 1. bölümdeki posta adresimize yazılı olarak da başvurabilirsiniz. Kimliğinizi doğrulamanızı isteyebiliriz. Başvuru ücretsizdir. Talebinizi en kısa sürede ve en geç 30 gün içinde sonuçlandırırız (KVKK m. 13; GDPR'da bir ay).
+**Haklarınızı nasıl kullanırsınız?** Profilinizi düzeltmek, kullanıcıları engellemek veya hesabınızı silmek için uygulamayı kullanabilirsiniz. Diğer talepler için, başvurunun size ait olduğunu anlayabilmemiz için hesabınızın e-posta adresinden admin@whomie.com adresine yazın. Kimliğinizi doğrulamanızı isteyebiliriz. Başvuru ücretsizdir. Talebinizi en kısa sürede ve en geç 30 gün içinde sonuçlandırırız (KVKK m. 13; GDPR'da bir ay).
 
 **Şikâyet.** KVKK'ya göre önce bize başvurmanız gerekir. Başvurunuz reddedilirse, 30 gün içinde cevap vermezsek veya cevabımızı yetersiz bulursanız, Kişisel Verileri Koruma Kurulu'na (kvkk.gov.tr) şikâyette bulunabilirsiniz. AB'deyseniz, ülkenizdeki veri koruma otoritesine şikâyette bulunabilirsiniz.
 
@@ -217,7 +212,5 @@ Uygulama veya mevzuat değiştiğinde bu metni güncelleyebiliriz; o zaman "Son 
 ## 14. İletişim
 
 Sorular, talepler ve şikâyetler: **admin@whomie.com**
-
-Posta adresi: [[DECIDE: full legal name and postal address]]
 
 Bu metin Türkçe ve İngilizce olarak yayınlanmaktadır. Whomie'yi kullanma kuralları [Kullanım Koşulları](https://www.whomie.com/tr/terms-conditions/) sayfasındadır.

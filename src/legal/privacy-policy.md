@@ -38,7 +38,7 @@
 
 Whomie is a mobile app for people who are looking for a room or a flatmate. You create a profile, browse people and room listings near a location, filter them, and chat.
 
-The app is published by Doruk Can, an individual developer, [[DECIDE: full legal name and postal address]]. In this policy, "Whomie", "we", "us" and "our" mean the publisher.
+The controller is Doruk Can, the individual developer who publishes the Whomie app. In this policy, "Whomie", "we", "us" and "our" mean the publisher.
 
 We are the data controller ("veri sorumlusu" under the Turkish Personal Data Protection Law No. 6698, "KVKK") for the personal data described here. That means we decide why and how it is used. If the EU General Data Protection Regulation ("GDPR") applies to you, we are the controller under the GDPR too.
 
@@ -70,7 +70,7 @@ If you write to admin@whomie.com, your email and what you write are kept in our 
 
 We do not ask for sensitive data, such as your health, religion or political views. Please do not put such things in your bio or in chats.
 
-"Our database" is a MongoDB database that our backend uses, hosted with [[DECIDE: MongoDB hosting provider and region]].
+"Our database" is a MongoDB database run by our cloud database provider. Its servers may be outside Türkiye, for example in the US or the EU.
 
 <a id="legal-bases"></a>
 ## 3. Why we use your data, and our legal bases
@@ -96,7 +96,7 @@ Only signed-in users can see profiles and listings.
 
 - **Your profile** shows your name, age, photos, bio, gender, languages, traits, education, work, maximum budget, minimum stay, preferred move date and location. Other users see your age, not your birthday.
 - **Your room listing** shows the listing, plus your name, age, education, work and photos. The listing's exact location is shown as a point on a street-level map.
-- **Your location:** [[DECIDE: the backend returns exact coordinates to other users — round them or show only district/city before publishing; then describe it here]]
+- **Your location:** Other signed-in users can see the location you set for your profile, and room listings show their location on a map.
 - **Your chats** are shown in the app only to the people in the chat.
 - **Your photos** are stored at web links that do not need a sign-in: anyone who has the link to a photo can open it.
 - Other users **never** see your email address, surname, password, nationality or gender preference.
@@ -111,7 +111,7 @@ We share your data only with other users (section 4) and with the service provid
 | Provider | What they do for us | Data they handle |
 |---|---|---|
 | **Heroku** (Salesforce) | Runs our backend server | All data that passes through our server, including IP addresses |
-| [[DECIDE: MongoDB hosting provider and region]] | Hosts our database | Account, profile, location, listings, push tokens, reports, blocks, contact messages |
+| **Our cloud database provider** (servers may be outside Türkiye, for example in the US or the EU) | Hosts our database | Account, profile, location, listings, push tokens, reports, blocks, contact messages |
 | **New Relic** | Monitors the server's performance | Technical request data and IP addresses |
 | **Amazon Web Services** (Amazon S3, Amazon CloudFront, Amazon SES) | Stores and delivers photos; sends verification and password-reset emails | Photos; your email address and the codes we send you |
 | **Google Firebase** (Cloud Firestore) | Stores and delivers chat messages | Chat rooms and messages |
@@ -129,27 +129,22 @@ We may also disclose data when the law requires it, for example to a court or a 
 <a id="international-transfers"></a>
 ## 6. International transfers
 
-Most of our providers are based in the United States: Heroku (Salesforce), New Relic, Amazon Web Services, Google, Apple, Expo and LinkedIn. Your data may be stored or processed in the United States or other countries outside Türkiye and the EU.
+Some of our providers store or process data outside Türkiye and the EU, for example in the United States. Most of them are based there: Heroku (Salesforce), New Relic, Amazon Web Services, Google, Apple, Expo and LinkedIn. Our cloud database provider's servers may also be outside Türkiye, for example in the US or the EU.
 
-These countries may protect personal data less than Türkiye or the EU do. Under KVKK article 9 and Chapter V of the GDPR, a transfer abroad needs a legal safeguard. We rely on [[DECIDE: transfer safeguard — e.g. KVKK standard contracts notified to the KVKK Authority, and EU Standard Contractual Clauses]].
+These countries may protect personal data less than Türkiye or the EU do. When we transfer data abroad, we do so in line with applicable data protection law (KVKK and, where it applies, the GDPR).
 
 <a id="retention"></a>
 ## 7. How long we keep data
 
-**While your account exists.** We keep your account, profile, photos, listing and chats as long as your account exists, because the service needs them.
+**While your account is open**, we keep your account, profile, photos, listings and chats, because the service needs them.
 
-**Photos you remove**, and the photos of a listing you delete, are deleted from storage within [[DECIDE: period — app/backend must implement]].
+**Photos you remove and listings you delete** disappear from the app right away. Stored copies follow the rule below.
 
-**When you delete your account** (in the app: Settings → Delete Account):
+**When you delete your account** (in the app: Settings → Delete Account), your profile, listings and chats disappear from the app right away. Other users can no longer find you or your listing, and the people you chatted with no longer see your chats.
 
-- Your account and your room listing are removed from the live service immediately. Other users can no longer find them.
-- A copy of your account and listing is kept in an archive [[DECIDE: reason for keeping the archive copy, e.g. to handle reports or legal claims]] and deleted after [[DECIDE: archive purge period, e.g. 30 days — backend must implement]].
-- Your profile and listing photos are deleted from Amazon S3 within [[DECIDE: same period — backend must implement]].
-- The people you chatted with no longer see your chats in the app. Chat rooms and messages stay stored in Google Firebase Cloud Firestore until [[DECIDE: period, or delete/anonymise — backend must implement]].
-- Reports and contact-form messages are kept for [[DECIDE: retention period and reason for reports and contact messages]].
-- Server logs and monitoring data are kept for [[DECIDE: retention period for Heroku and New Relic logs]].
+**Copies we may keep.** Copies of your data (including the account archive and photos), chat records, reports, contact messages and server logs may be kept for as long as needed to meet legal obligations, resolve disputes, enforce our terms and prevent abuse. They are then deleted or anonymised, as KVKK article 7 requires.
 
-If the law requires us to keep some data longer, or we need it for a legal claim, we keep only that data, only as long as needed. When the reason to keep data ends, we delete, destroy or anonymise it (KVKK article 7). Our [account deletion page](https://www.whomie.com/delete-account/) has the steps.
+Our [account deletion page](https://www.whomie.com/delete-account/) has the steps.
 
 <a id="security"></a>
 ## 8. Security
@@ -160,7 +155,7 @@ We take reasonable steps to protect your data:
 - Your sign-in token is kept in your device's secure storage.
 - Only signed-in users can browse profiles and listings, and they never see email addresses or passwords.
 
-No system is perfectly secure. If a breach affects your data, we will tell you and the authorities as the law requires.
+No method of transmission over the internet or of electronic storage is completely secure, so we cannot guarantee absolute security. If a breach affects your data, we will tell you and the authorities as the law requires.
 
 <a id="your-rights"></a>
 ## 9. Your rights
@@ -178,7 +173,7 @@ No system is perfectly secure. If a breach affects your data, we will tell you a
 
 **Under the GDPR**, if it applies to you, you have the right to access, correct and delete your data, to restrict or object to its use, to receive it in a portable format, and to withdraw any consent at any time.
 
-**How to use your rights.** You can correct your profile, block users or delete your account in the app. For anything else, write to admin@whomie.com from the email address of your account, so we know the request is yours. You can also write to our postal address in section 1. We may ask you to confirm your identity. It is free. We reply as soon as we can and within 30 days at the latest (KVKK article 13; one month under the GDPR).
+**How to use your rights.** You can correct your profile, block users or delete your account in the app. For anything else, write to admin@whomie.com from the email address of your account, so we know the request is yours. We may ask you to confirm your identity. It is free. We reply as soon as we can and within 30 days at the latest (KVKK article 13; one month under the GDPR).
 
 **Complaints.** Under KVKK, you first apply to us. If we reject your request, do not reply within 30 days, or you find our answer insufficient, you can complain to the Personal Data Protection Board (Kişisel Verileri Koruma Kurulu) at kvkk.gov.tr. If you are in the EU, you can complain to the data protection authority in your country.
 
@@ -215,7 +210,5 @@ We may update this policy when the app or the law changes, and we will change th
 ## 14. Contact
 
 Questions, requests or complaints: **admin@whomie.com**
-
-Postal address: [[DECIDE: full legal name and postal address]]
 
 This policy is available in English and Turkish. Our [Terms and Conditions](https://www.whomie.com/terms-conditions/) explain the rules for using Whomie.

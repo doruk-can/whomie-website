@@ -9,7 +9,7 @@
 > - Whomie oda veya ev arkadaşı bulmanıza yardım eder. Kullanmak için 18 yaşında veya daha büyük olmalısınız.
 > - Paylaştıklarınız sizindir. Whomie'nin çalışabilmesi için onları uygulamada göstermemize izin verirsiniz.
 > - Dürüst ve saygılı olun: sahte ilan, taciz, ayrımcılık ve dolandırıcılık yok.
-> - Whomie kullanıcılar arasındaki hiçbir kira sözleşmesinin veya anlaşmanın tarafı değildir ve kullanıcılar arasındaki ödemelere aracılık etmez. Dikkatli buluşun; odayı görmeden asla para ödemeyin.
+> - Whomie yalnızca kullanıcıların birbirini bulup iletişim kurduğu bir platform sağlar. Kullanıcılar arasındaki hiçbir ilanın, kira sözleşmesinin, ödemenin veya buluşmanın tarafı değildir. Paylaştığınız, gönderdiğiniz ve yaptığınız her şeyden ve kendi güvenliğinizden yalnızca siz sorumlusunuz.
 > - Sizi tedirgin eden birini şikâyet edin veya engelleyin. Şikâyetleri inceler, içerik kaldırabilir veya hesapları askıya alabiliriz.
 > - Hesabınızı istediğiniz zaman Ayarlar'dan silebilirsiniz.
 
@@ -37,7 +37,7 @@
 
 Whomie, oda veya ev arkadaşı arayanlar için bir mobil uygulamadır. Profil oluşturabilir, bir konumun yakınındaki kişilere ve oda ilanlarına bakabilir, onları filtreleyebilir ve sohbet edebilirsiniz.
 
-Whomie'nin yayıncısı bireysel geliştirici Doruk Can'dır: [[DECIDE: full legal name and postal address]]. Bu koşullarda "Whomie", "biz" ve "bizim" yayıncıyı, "siz" ise uygulamayı kullanan kişiyi ifade eder.
+Whomie'yi, Whomie uygulamasını yayınlayan bireysel geliştirici Doruk Can sunar. Bu koşullarda "Whomie", "biz" ve "bizim" yayıncıyı, "siz" ise uygulamayı kullanan kişiyi ifade eder.
 
 Bu koşullar sizinle aramızda bir sözleşmedir. Hesap oluşturarak veya Whomie'yi kullanarak bu koşulları kabul etmiş olursunuz. Kabul etmiyorsanız lütfen Whomie'yi kullanmayın.
 
@@ -69,9 +69,9 @@ E-posta adresi ve şifreyle kayıt olabilir ya da Google veya LinkedIn ile (sunu
 
 **Bize bir kullanım izni (lisans) verirsiniz.** İçeriğinizi yalnızca Whomie'yi çalıştırmak ve sunmak amacıyla barındırmamız, saklamamız, kopyalamamız, boyutlandırmamız, göstermemiz ve iletmemiz için bize münhasır olmayan, dünya çapında ve ücretsiz bir izin verirsiniz. Örneğin profilinizi ve ilanınızı giriş yapmış diğer kullanıcılara gösterir, mesajlarınızı gönderdiğiniz kişilere iletiriz. Bu izin, içeriği veya hesabınızı sildiğinizde sona erer; Gizlilik Politikası'nda belirtilen süreler boyunca sakladığımız kopyalar bunun dışındadır.
 
-**İçeriğinizden siz sorumlusunuz.** Paylaşma hakkınız olduğunu, içeriğin doğru olduğunu ve bu koşullara veya kanuna aykırı olmadığını kabul edersiniz. Yalnızca kendi çektiğiniz ya da kullanma izniniz olan fotoğrafları paylaşın. Başkalarının fotoğraflarını onların izni olmadan paylaşmayın.
+**İçeriğinizden yalnızca siz sorumlusunuz.** Bu, paylaştığınız veya gönderdiğiniz her şeyi kapsar: profiliniz, fotoğraflarınız, ilanlarınız (doğrulukları, hukuka uygunlukları ve odanın sahibi olmanız ya da onu kiraya verme hakkınız dahil) ve her mesajınız. Bir mesajın içeriğinden yalnızca onu gönderen kişi sorumludur. Paylaşma hakkınız olduğunu, içeriğin doğru olduğunu ve bu koşullara veya kanuna aykırı olmadığını kabul edersiniz. Yalnızca kendi çektiğiniz ya da kullanma izniniz olan fotoğrafları paylaşın. Başkalarının fotoğraflarını onların izni olmadan paylaşmayın.
 
-İçerikleri yayınlanmadan önce kontrol etmeyiz. Bu koşullara aykırı içerikleri kaldırabiliriz.
+Whomie, 5651 sayılı Kanun kapsamında **yer sağlayıcı** olarak hizmet verir. Kullanıcı içeriklerini yayınlanmadan önce kontrol etmez; hiçbir kullanıcıya veya ilana kefil olmaz. Bu koşullara aykırı içerikleri kaldırabiliriz.
 
 <a id="acceptable-use"></a>
 ## 5. Kullanım kuralları
@@ -87,14 +87,16 @@ Whomie'yi şunlar için kullanmayın:
 - **Yasa dışı veya zararlı içerik**, cinsel içerik, şiddet veya suçu özendiren içerik dahil.
 - **Hizmeti kötüye kullanmak.** Veri kazımayın (scraping), bot kullanmayın, engellemeyi aşmaya, hesaplara veya sistemlere sızmaya ya da Whomie'nin işleyişini bozmaya çalışmayın.
 
-**Ödemeler.** Whomie kullanıcılar arasındaki ödemelere aracılık etmez. Başka bir kullanıcıyla anlaştığınız kira, depozito veya başka her türlü ödeme, örneğin bir kira sözleşmesi kapsamındaki ödemeler, sizinle o kullanıcı arasındadır.
+**Ödemeler.** Whomie kullanıcılar arasındaki ödemelere aracılık etmez. Başka bir kullanıcıyla anlaştığınız kira, depozito veya başka her türlü ödeme, örneğin bir kira sözleşmesi kapsamındaki ödemeler, yalnızca sizinle o kullanıcı arasındadır.
 
 <a id="safety"></a>
 ## 6. Güvenli buluşma ve oda gezme
 
-**Whomie, kullanıcılar arasındaki hiçbir kira, alt kira veya başka bir sözleşmenin tarafı değildir.** Hiçbir odanın sahibi değiliz, oda kiraya vermiyor veya yönetmiyoruz; emlakçı değiliz. Kullanıcıların kimliklerini veya ilanları doğrulamıyoruz. Kiminle konuşacağınıza, kiminle buluşacağınıza ve neyi kabul edeceğinize siz karar verirsiniz.
+**Whomie yalnızca kullanıcıların birbirini bulup iletişim kurduğu bir platform sağlar.** Kullanıcılar arasındaki hiçbir ilanın, kira veya alt kira sözleşmesinin, anlaşmanın, ödemenin, depozitonun, buluşmanın ya da ilişkinin tarafı, aracısı, temsilcisi, ev sahibi veya garantörü değildir. Hiçbir odanın sahibi değiliz; oda kiraya vermiyor veya yönetmiyoruz.
 
-Birkaç basit kural işinize yarar:
+**Yalnızca siz sorumlusunuz:** Whomie'de ve dışındaki davranışlarınızdan, buluştuğunuz kişilerden, oda gezmelerinden, ödemelerden, sözleşmelerden ve vergilerden, kanunlara uymaktan, karşınızdaki kişiyi ve odayı kontrol etmekten. Whomie kimlik, geçmiş, ilan veya mesaj kontrolü yapmaz ve hiçbir kullanıcıya veya ilana kefil olmaz.
+
+**İnsanlarla buluşurken veya oda gezerken kendi güvenliğinizden yalnızca siz sorumlusunuz.** Birkaç basit kural işinize yarar:
 
 - İlk buluşmayı kalabalık bir yerde yapın ya da oda gezmeye bir arkadaşınızla gidin.
 - Bir şey ödemeden veya imzalamadan önce odayı yerinde görün.
@@ -143,30 +145,39 @@ Bu koşulların, niteliği gereği hesabınız kapandıktan sonra da geçerli ol
 <a id="disclaimers"></a>
 ## 10. Sorumluluk reddi
 
-Kanunun izin verdiği ölçüde Whomie'yi "olduğu gibi" ve "erişilebildiği ölçüde" sunarız.
+Kanunun izin verdiği en geniş ölçüde Whomie, açık veya örtülü hiçbir garanti verilmeksizin "olduğu gibi" ve "erişilebildiği ölçüde" sunulur. Özellikle şunları garanti etmeyiz:
 
-- Oda veya ev arkadaşı bulacağınızı garanti etmeyiz.
-- Profiller, ilanlar ve mesajlar kullanıcılardan gelir. Bunları kontrol etmeyiz; doğru, eksiksiz veya güncel olduklarını garanti etmeyiz.
-- Whomie'nin her zaman erişilebilir, hızlı veya hatasız olacağını garanti etmeyiz.
-- Haritalar ve konumlar üçüncü taraf hizmetlerden gelir ve hatalı olabilir.
+- Whomie'nin her zaman erişilebilir, kesintisiz, hızlı, güvenli veya hatasız olacağını;
+- profillerin, ilanların, mesajların, haritaların veya konumların doğru, eksiksiz, hukuka uygun veya güncel olduğunu;
+- bir oda, ev arkadaşı ya da herhangi bir eşleşme veya sonuç bulacağınızı;
+- Whomie'nin belirli bir amaca uygun olduğunu.
+
+Profiller, ilanlar ve mesajlar bizden değil, kullanıcılardan gelir.
 
 <a id="liability"></a>
 ## 11. Sorumluluğun sınırlandırılması
 
-Kanunun izin verdiği ölçüde:
+Kanunun izin verdiği en geniş ölçüde Whomie ve yayıncısı, aşağıdakilerden kaynaklanan veya bunlarla bağlantılı hiçbir doğrudan veya dolaylı zarardan sorumlu değildir:
 
-- Diğer kullanıcıların Whomie'de veya dışında, oda gezmelerinde, buluşmalarda ya da kendi aralarındaki anlaşmalarda yaptıklarından veya söylediklerinden sorumlu değiliz.
-- Başka bir kullanıcıya ödenen para, depozito veya kiranın kaybından sorumlu değiliz.
-- Kâr kaybı veya fırsat kaybı gibi dolaylı zararlardan sorumlu değiliz.
+- uygulama, uygulamayı kullanmanız veya kullanamamanız;
+- profiller, fotoğraflar, ilanlar ve mesajlar dahil kullanıcı içerikleri;
+- herhangi bir kullanıcının Whomie'de veya dışındaki eylemleri ya da ihmalleri;
+- kullanıcılar arasındaki ilanlar, kira sözleşmeleri, buluşmalar, oda gezmeleri, ödemeler, depozitolar veya diğer işlem ve anlaşmalar;
+- giriş sağlayıcıları, haritalar, uygulama mağazaları ve barındırma sağlayıcıları gibi üçüncü taraf hizmetler;
+- veri kaybı ya da hizmetteki kesintiler, hatalar veya hizmetin sona ermesi.
 
-Bu koşullar, kanunun sınırlanmasına izin vermediği sorumluluğumuzu sınırlamaz; örneğin kast veya ağır ihmal hâlinde (Türk Borçlar Kanunu m. 115) ya da kusurumuzla sebep olduğumuz ölüm veya yaralanmalarda. Bu koşullar, tüketici olarak emredici mevzuattan doğan haklarınızı da ortadan kaldırmaz.
+Buna örneğin kaybedilen para, depozito veya kira, kâr veya fırsat kaybı ve mala ya da itibara gelen zararlar dahildir.
+
+Hariç tutulamadığı durumlarda tüketici mevzuatı dahil emredici hükümler uygulanmaya devam eder.
+
+**Tazmin.** İçeriğinizden, mesajlarınızdan, davranışlarınızdan, ilanlarınızdan veya bu koşulları ya da kanunu ihlal etmenizden doğan her türlü talep, zarar, para cezası ve masrafa (avukatlık ücretleri dahil) karşı Whomie'yi ve yayıncısını tazmin etmeyi ve zarardan ari tutmayı kabul edersiniz.
 
 <a id="governing-law"></a>
 ## 12. Uygulanacak hukuk ve yetkili mahkemeler
 
-Bu koşullara uygulanacak hukuk ve yetkili mahkemeler: [[DECIDE: e.g. Turkish law, Istanbul courts]].
+Bu koşullar Türk hukukuna tabidir. Uyuşmazlıklarda İstanbul mahkemeleri ve icra daireleri yetkilidir.
 
-Tüketiciyseniz, yaşadığınız ülkenin emredici tüketici mevzuatının sağladığı korumadan yararlanmaya devam edersiniz. Türkiye'de, kanunun öngördüğü durumlarda tüketici hakem heyetlerine ve tüketici mahkemelerine de başvurabilirsiniz.
+Ancak tüketiciyseniz, yaşadığınız ülkenin emredici tüketici mevzuatının sağladığı korumadan yararlanmaya devam edersiniz. Türkiye'de, kanunun öngördüğü durumlarda tüketici hakem heyetlerine ve tüketici mahkemelerine de başvurabilirsiniz.
 
 Mahkemeye gitmeden önce lütfen admin@whomie.com adresine yazın. Sorunların çoğu bu şekilde çözülür.
 
@@ -179,7 +190,5 @@ Uygulama veya mevzuat değiştiğinde bu koşulları güncelleyebiliriz; o zaman
 ## 14. İletişim
 
 Bu koşullarla ilgili sorular: **admin@whomie.com**
-
-Posta adresi: [[DECIDE: full legal name and postal address]]
 
 Bu koşullar Türkçe ve İngilizce olarak yayınlanmaktadır.

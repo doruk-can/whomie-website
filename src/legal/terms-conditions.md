@@ -9,7 +9,7 @@
 > - Whomie helps people find a room or a flatmate. You must be 18 or older to use it.
 > - You own what you post. You let us show it in the app so that Whomie can work.
 > - Be honest and respectful: no fake listings, no harassment, no discrimination, no scams.
-> - Whomie is not a party to any lease or agreement between users, and it does not handle payments between users. Meet carefully and never pay before you have seen the room.
+> - Whomie only provides a platform where users find each other and talk. It is not a party to any listing, lease, payment or meeting between users. You alone are responsible for what you post, send and do, and for your own safety.
 > - Report or block anyone who makes you feel unsafe. We review reports and may remove content or suspend accounts.
 > - You can delete your account at any time in Settings.
 
@@ -37,7 +37,7 @@
 
 Whomie is a mobile app for people who are looking for a room or a flatmate. You can create a profile, browse people and room listings near a location, filter them, and chat.
 
-Whomie is published by Doruk Can, an individual developer, [[DECIDE: full legal name and postal address]]. In these terms, "Whomie", "we", "us" and "our" mean the publisher, and "you" means the person using the app.
+Whomie is provided by Doruk Can, the individual developer who publishes the Whomie app. In these terms, "Whomie", "we", "us" and "our" mean the publisher, and "you" means the person using the app.
 
 These terms are an agreement between you and us. By creating an account or using Whomie, you accept them. If you do not accept them, please do not use Whomie.
 
@@ -69,9 +69,9 @@ You can sign up with an email address and a password, or sign in with Google or 
 
 **You give us a licence.** You give us a non-exclusive, worldwide, royalty-free licence to host, store, copy, resize, display and deliver your content, only to run and provide Whomie. For example, we show your profile and listing to other signed-in users, and we deliver your messages to the people you send them to. This licence ends when you delete the content or your account, except for copies we keep for the periods our Privacy Policy describes.
 
-**You are responsible for your content.** You confirm that you have the right to post it, that it is true, and that it does not break these terms or the law. Only post photos you took or have permission to use. Do not post photos of other people without their permission.
+**You alone are responsible for your content.** This covers everything you post or send: your profile, your photos, your listings (including their accuracy, their legality, and your ownership of the room or your right to rent it out) and every message. The sender of a message alone is responsible for its content. You confirm that you have the right to post your content, that it is true, and that it does not break these terms or the law. Only post photos you took or have permission to use. Do not post photos of other people without their permission.
 
-We do not check content before it appears. We may remove content that breaks these terms.
+Under Turkish Law No. 5651, Whomie acts as a hosting provider ("yer sağlayıcı"). We do not check user content before it appears, and we do not endorse any user or listing. We may remove content that breaks these terms.
 
 <a id="acceptable-use"></a>
 ## 5. Acceptable use
@@ -87,14 +87,16 @@ Do not use Whomie to:
 - **Post illegal or harmful content**, including sexual content, violence, or content that encourages crime.
 - **Misuse the service.** Do not scrape data, use bots, try to get around a block, break into accounts or systems, or interfere with how Whomie works.
 
-**Payments.** Whomie does not handle payments between users. Any rent, deposit or other money you agree with another user, for example under a lease, is a matter between you and that user.
+**Payments.** Whomie does not handle payments between users. Any rent, deposit or other money you agree with another user, for example under a lease, is solely a matter between you and that user.
 
 <a id="safety"></a>
 ## 6. Meeting people and viewing rooms safely
 
-**Whomie is not a party to any lease, sublease or other agreement between users.** We do not own, rent out or manage any room, and we are not an estate agent. We do not check users' identities or listings. You decide who you talk to, who you meet and what you agree to.
+**Whomie only provides a platform where users find each other and communicate.** Whomie is not a party, broker, agent, landlord or guarantor of any listing, lease, sublease, agreement, payment, deposit, meeting or relationship between users. We do not own, rent out or manage any room.
 
-Some simple rules help:
+**You alone are responsible** for your conduct on Whomie and offline, for the people you meet, for viewings, payments, contracts and taxes, for complying with the law, and for checking the other person and the room. Whomie does no identity, background, listing or message checks, and does not endorse any user or listing.
+
+**You are solely responsible for your own safety** when you meet people or view rooms. Some simple rules help:
 
 - Meet for the first time in a public place, or bring a friend to a viewing.
 - See the room in person before you pay anything or sign anything.
@@ -143,30 +145,39 @@ The parts of these terms that by their nature should continue after your account
 <a id="disclaimers"></a>
 ## 10. Disclaimers
 
-We provide Whomie "as is" and "as available", to the extent the law allows.
+To the maximum extent the law allows, Whomie is provided "as is" and "as available", without any warranty of any kind, express or implied. In particular, we give no warranty:
 
-- We do not promise that you will find a room or a flatmate.
-- Profiles, listings and messages come from users. We do not check them, and we do not promise that they are true, complete or up to date.
-- We do not promise that Whomie will always be available, fast or free of errors.
-- Maps and locations come from third-party services and may be inaccurate.
+- that Whomie will be available, uninterrupted, fast, secure or free of errors;
+- that profiles, listings, messages, maps or locations are accurate, complete, lawful or up to date;
+- that you will find a room, a flatmate or any match or result; or
+- that Whomie is fit for any particular purpose.
+
+Profiles, listings and messages come from users, not from us.
 
 <a id="liability"></a>
 ## 11. Limitation of liability
 
-To the extent the law allows:
+To the maximum extent permitted by law, Whomie and its publisher are not liable for any direct or indirect damage or loss arising from or connected with:
 
-- We are not responsible for what other users do or say, on Whomie or outside it, including at viewings, meetings or under any agreement between users.
-- We are not responsible for any loss of money, deposits or rent paid to another user.
-- We are not responsible for indirect losses, such as lost profit or lost opportunities.
+- the app, your use of it, or not being able to use it;
+- user content, including profiles, photos, listings and messages;
+- the acts or omissions of any user, on Whomie or outside it;
+- listings, leases, meetings, viewings, payments, deposits or any other transaction or agreement between users;
+- third-party services, such as sign-in providers, maps, app stores and hosting providers; or
+- loss of data, or interruptions, errors or the ending of the service.
 
-Nothing in these terms limits our liability where the law does not allow it to be limited, for example for intent or gross negligence, or for death or personal injury caused by our fault. Nothing in these terms takes away rights you have as a consumer under mandatory law.
+This includes, for example, lost money, deposits or rent, lost profit or opportunities, and damage to property or reputation.
+
+Mandatory law, including consumer law, still applies where it cannot be excluded.
+
+**Indemnity.** You agree to indemnify and hold harmless Whomie and its publisher against all claims, damages, fines and costs (including lawyers' fees) that arise from your content, your messages, your conduct, your listings, or your breach of these terms or the law.
 
 <a id="governing-law"></a>
 ## 12. Governing law and courts
 
-These terms are governed by [[DECIDE: e.g. Turkish law, Istanbul courts]].
+These terms are governed by Turkish law. Istanbul courts and enforcement offices have jurisdiction over disputes.
 
-If you are a consumer, you keep the protection of the mandatory consumer laws of the country where you live, and you may also use the consumer bodies and courts that those laws make available to you.
+However, if you are a consumer, you keep the protection of the mandatory consumer laws of the country where you live, and you may also use the consumer bodies and courts that those laws make available to you.
 
 Before going to court, please write to us at admin@whomie.com. Most problems can be solved that way.
 
@@ -179,7 +190,5 @@ We may update these terms when the app or the law changes, and we will change th
 ## 14. Contact
 
 Questions about these terms: **admin@whomie.com**
-
-Postal address: [[DECIDE: full legal name and postal address]]
 
 These terms are available in English and Turkish.
